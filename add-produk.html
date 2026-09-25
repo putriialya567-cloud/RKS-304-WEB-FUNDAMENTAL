@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Produk</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+
+<header class="bg-pink-600 text-white p-4">
+  <h1 class="text-xl font-bold">Admin Panel</h1>
+</header>
+
+<div class="flex min-h-screen">
+
+<aside class="w-64 bg-gray-800 text-white p-5">
+  <h2 class="text-lg font-bold mb-6">Navigation</h2>
+  <nav class="space-y-3">
+    <a href="dashboard.html" class="block hover:text-blue-300">Dashboard</a>
+    <a href="products.html" class="block hover:text-blue-300">Products</a>
+    <a href="index.html" class="block text-red-300">Logout</a>
+  </nav>
+</aside>
+
+<main class="flex-1 p-8">
+
+  <h2 class="text-3xl font-bold mb-6">Add Produk</h2>
+
+  <form class="bg-white p-6 rounded-xl shadow max-w-2xl">
+
+    <label class="block font-semibold mb-2">Name</label>
+    <input type="text"
+           class="w-full border rounded-lg p-2 mb-4"
+           placeholder="Nama produk"
+           required>
+
+    <label class="block font-semibold mb-2">Stock</label>
+    <input type="number"
+           class="w-full border rounded-lg p-2 mb-4"
+           placeholder="Jumlah stock"
+           required>
+
+    <label class="block font-semibold mb-2">Description</label>
+    <textarea
+      class="w-full border rounded-lg p-2 mb-6"
+      rows="5"
+      placeholder="Deskripsi produk"></textarea>
+
+    <button type="submit"
+            class="bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700">
+      Submit
+    </button>
+
+  </form>
+
+</main>
+</div>
+
+<footer class="bg-gray-800 text-white text-center p-4">
+  &copy; 2026 Admin Panel
+</footer>
+
+</body>
+</html>
